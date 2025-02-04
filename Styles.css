@@ -1,0 +1,77 @@
+/* Основное содержимое */
+main {
+    display: flex;
+    justify-content: space-between; /* Расположение элементов по краям */
+    align-items: center; /* Выравнивание элементов вертикально */
+    gap: 20px; /* Пространство между элементами */
+}
+
+/* Блок информации № 1 */
+.Info_box_1 {
+    padding-bottom: 5px; /* Внутренний отступ снизу */
+    width: 200px; /* Ширина блока */
+    text-align: left; /* Выравнивание текста */
+    background-color: wheat; /* Цвет фона */
+    border: wheat 1px outset; /* Граница */
+    border-radius: 2px; /* Закругление границ */
+}
+
+/* Блок информации № 2 */
+.Info_box_2 {
+    flex-grow: 1; /* Позволяет таблице занять всё доступное пространство */
+    display: flex;
+    justify-content: center; /* Центрирование таблицы горизонтально */
+}
+
+/* Блок доп. информации */
+aside {
+    width: 200px; /* Ширина блока */
+    background-color: antiquewhite; /* Цвет фона */
+    border: black 1px outset; /* Граница */
+    border-radius: 2px; /* Закругление границы */
+}
+
+/* Элемент фомы - Заголовок группы элементов */
+legend {
+    font-size: 14px;
+}
+
+/* Элемент формы - Числовая строка */
+#Array_length {
+    width: 70%;
+}
+
+#Label_required {
+    color: red;
+}
+
+/* Элемент формы - Кнопка отправки */
+#Button_submit {
+    background-color: lime;
+    border: black 1px unset;
+    border-radius: 2px;
+}
+
+/* Элемент формы - Кнопка сброса */
+#Button_reset {
+    background-color: yellow;
+    border: black 1px unset;
+    border-radius: 2px;
+}
+
+/* Таблица */
+table {
+    background-color: black; /* Фоновый цвет */
+    color: white; /* Цвет текста */
+    border: blue 5px inset; /* Цвет границы */
+    border-radius: 5px; /* Закругление углов таблицы */
+}
+
+/* Ячейка таблицы */
+td {
+    width: 50px; /* Ширина ячейки */
+    height: 50px; /* Высота ячейки */
+    text-align: center; /* Центрирование текста */
+    font-size: 40px; /* Высота каретки */
+    border: 1px solid white; /* Границы ячеек */
+}
