@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <!-- Мета-данные -->
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="author" content="Изергиль Ван Дер Вельде">
+         <meta name="description" content="Браузерная игра 'Змейка'">
+        <!-- Мета-ссылки -->
+         <link rel="shortcut icon" href="Assets/Site_icon.png" type="image/png">
+         <link rel="stylesheet" href="Styles.css">
+        <!-- Заглавие страницы сайта -->
+         <title>Игра "Змейка"</title>
+    </head>
+    <body>
+        <!-- "Голова" страницы -->
+         <header>
+            <h1 align="center">----=={<u>Игра "Змейка"</u>}==----</h1>
+         </header>
+        <hr>
+        <!-- Основное содержимое страницы -->
+         <main>
+            <!-- Блок информации № 1 -->
+             <article class="Info_box_1">
+               <section>
+                  <form id="Form">
+                     <!-- Основная группа элементов формы -->
+                      <fieldset>
+                        <!-- Заглавие группы элементов формы -->
+                         <legend><strong><u>Настройка игрового поля</u></strong></legend>
+                        <!-- Элементы формы -->
+                         <label for="Array_length">| <i>Введите <strong>длинну игрового поля</strong> (<u>7x7</u>):</i></label> <br>
+                         <br>
+                         <input type="number" id="Array_length" name="Array_length" placeholder="Нечётное число." min="5" max="9" step="2" value="7" required> <label id="Label_required" for="Array_length">*</label>
+                      </fieldset>
+                     <br>
+                     <!-- Кнопки -->
+                      <input type="submit" id="Button_submit" value="Применить"> <label> / </label> <input type="reset" id="Button_reset" value="Вернуть">
+                  </form>
+               </section>
+             </article>
+            <!-- Блок информации № 2 -->
+             <article class="Info_box_2">
+                <section>
+                    <!-- Окно игры -->
+                     <table border="1" align="center">
+                        <!-- "Голова" таблицы -->
+                         <thead>
+                            <tr>
+                                <th colspan="9">----=={<u>Окно игры</u>}==----</th>
+                            </tr>
+                         </thead>
+                        <!-- Основное содержимое таблицы -->
+                         <tbody id="Game_window">
+                            <!-- Генерация строк и ячеек -->
+                         </tbody>
+                     </table>
+                </section>
+             </article>
+            <!-- Блок доп. информации -->
+             <aside>
+               <h5 align="center">----=={<u>Количество очков</u>}==----</h5>
+               <hr>
+               <p>| <strong>Итого:</strong> <em><span id="Output_score">0</span></em>.</p>
+               <hr width="90%">
+               <p>| <strong>Лучший результат:</strong> <em><span id="Best_score">0</span></em>.</p>
+             </aside>
+         </main>
+        <hr>
+        <!-- "Подвал" страницы -->
+         <footer>
+            <p align="center"><small><strong>Copyright &copy; Cultus Tenebrae &amp; IBS Dunice academy</strong></small></p>
+         </footer>
+        <!-- JavaScript код -->
+         <script src="Main_code.js"></script>
+    </body>
+</html>
